@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background:#f2d9a0;
+    color: #800020;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 60px;
+    background: #5e0f1a;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    gap: 50px;
+}
+
+.logo {
+    color: #dcc8a3;
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #f2d9a0;
+    padding: 10px 18px;
+    transition: .3s;
+    border-radius: 5px;
+}
+
+nav a:hover {
+    background: #3b010b;
+    color: #f2d9a0;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 80px 60px;
+    min-height: 100vh;
+}
+
+.hero-text {
+    width: 50%;
+}
+
+.hero-text h1 {
+    font-size: 65px;
+    color: #560b18;
+}
+
+.hero-text p {
+    margin: 30px 0;
+    font-size: 22px;
+    line-height: 1.6;
+    color: maroon;
+}
+
+.hero-image img {
+    width: 400px;
+    border-radius: 40px;
+}
+.hero-image img :howver{
+gap: 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 20px;
+    background: maroon;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .3s;
+}
+
+.btn:hover {
+    background: maroon;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 80px 60px;
+}
+
+section h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: maroon;
+}
+
+section p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: maroon;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    flex: 1;
+    min-width: 220px;
+    background: maroon;
+    color: #ebeaec;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.card h3 {
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #000000;
+    font-size: 15px;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    background: maroon;
+    color: #ffffff;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: #ffffff;
+}
+
+.card i {
+    font-size: 50px;
+    color: #f3edf4;
+    margin-bottom: 20px;
+}
+
+#contact h3 {
+    margin-bottom: 10px;
+    color: maroon;
+    font-size: 20px;
+}
+
+footer {
+    background: maroon;
+    text-align: center;
+    padding: 20px;
+    color: #f9f6f9;
+    font-weight: bold;
+}
+
+/* Back to Top Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: maroon;
+    color: white;
+    border: none;
+    padding: 14px 16px;
+    border-radius: 50%;
+    font-size: 18px;
+    cursor: pointer;
+    display: none;
+    transition: .3s;
+    z-index: 999;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+}
+
+.back-to-top:hover {
+    background: maroon;
+    transform: scale(1.1);
+}
