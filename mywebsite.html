@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Racing Merch Hub</title>
+    <link rel="stylesheet" href="f1merch.css">
+</head>
+<body>
+    <div class="main-container">
+        <header>
+            <h1>F1 Merch Website</h1>
+            <hr>
+
+            <nav>
+                <button type="button" onclick="showPage('home')">Home</button>|
+                <button type="button" onclick="showPage('apparel')">Team Apparel</button>|
+                <button type="button" onclick="showPage('caps')">Driver Caps</button>|
+                <button type="button" onclick="showPage('accessories')">Accessories</button>
+            </nav>
+
+            <hr>
+        </header>
+
+        <main>
+            <div class="welcome-title">Lights Out and Away We Go!</div>
+            <p class="description">
+                Welcome to the ultimate hub for Formula 1 merchandise, team gear, and exclusive driver caps.
+                <br>
+                Please use the menu above to explore the collection.
+            </p>
+
+            <div class="content-box">
+                <div id="home" class="page-section active">
+                    <h2>2026 SEASON MERCH ARRIVALS</h2>
+                    <p>Welcome to the main showcase! Choose a category from the menu above to browse available items.</p>
+                </div>
+
+                <div id="apparel" class="page-section">
+                    <h2>TEAM APPAREL COLLECTION</h2>
+                    <p>Browse official team polo shirts, jackets, and hoodies from Ferrari, Red Bull, Mercedes, and McLaren!</p>
+                </div>
+
+                <div id="caps" class="page-section">
+                    <h2>OFFICIAL DRIVER CAPS</h2>
+                    <p>Get the authentic special edition team caps and driver-signature hats for the 2026 season.</p>
+                </div>
+
+                <div id="accessories" class="page-section">
+                    <h2>ACCESSORIES &amp; DIECASTS</h2>
+                    <p>Keychains, backpacks, phone cases, and 1:43 scale model race cars available here!</p>
+                </div>
+            </div>
+        </main>
+
+        <a class="back" href="../index.html">&larr; Back to Portfolio</a>
+    </div>
+
+    <script>
+        function showPage(sectionId) {
+            document.querySelectorAll('.page-section').forEach(function (section) {
+                section.classList.remove('active');
+            });
+
+            var target = document.getElementById(sectionId);
+            if (target) {
+                target.classList.add('active');
+            }
+        }
+    </script>
+</body>
+</html>
